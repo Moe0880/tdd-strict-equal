@@ -6,9 +6,9 @@ const expect = require('chai').expect
 describe('index', () => {
   describe('strictEqual', () => {
     it('compares the two values and returns a boolean', () => {
-      const input = ['abc', 2, 'abc', 'cba', '4']
+      const input = ['abc', 'abc', 'cba', '4', 4, 4.5]
 
-      const result = strictEqual(input[0], input[2])
+      const result = strictEqual(input[4], input[5])
 
       expect(result).to.equal(true)
     })

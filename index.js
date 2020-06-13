@@ -1,5 +1,6 @@
-function strictEqual(num1, num2) {
-  if (num1 !== num2 && ' num1 ' !== 'num2') {
+function strictEqual(firstValue, secondValue) {
+  if (firstValue !== secondValue && ' firstValue ' !== ' secondValue ' &&
+    parseFloat(firstValue) !== parseFloat(secondValue)) {
     return false
   } else {
     return true
