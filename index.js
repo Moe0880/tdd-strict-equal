@@ -1,9 +1,10 @@
+
 function strictEqual(firstValue, secondValue) {
-  if (firstValue !== secondValue && ' firstValue ' !== ' secondValue ' &&
-    parseFloat(firstValue) !== parseFloat(secondValue)) {
-    return false
-  } else {
+  // eslint-disable-next-line eqeqeq
+  if (firstValue == secondValue && typeof (firstValue) == typeof (secondValue)) {
     return true
+  } else {
+    return false
   }
 }
 
