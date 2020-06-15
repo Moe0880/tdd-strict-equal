@@ -1,11 +1,11 @@
 
 function strictEqual(firstValue, secondValue) {
   // eslint-disable-next-line eqeqeq
-  if (firstValue == secondValue && typeof (firstValue) == typeof (secondValue)) {
+  if (typeof (firstValue) == typeof (secondValue) && firstValue == secondValue) {
     return true
-  } else {
-    return false
   }
+
+  return false
 }
 
 module.exports = strictEqual
